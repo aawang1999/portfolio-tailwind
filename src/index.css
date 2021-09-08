@@ -1,3 +1,116 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.about-container,
+.about-card,
+.about-card-face {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.about-container {
+  margin-top: 30px;
+  padding-bottom: 50px;
+}
+
+.about-card {
+  width: 100%;
+  text-align: center;
+  color: #fff;
+  height: 450px;
+}
+
+.about-card-inner {
+  width: 100%;
+  height: 100%;
+  transition: all 0.5s ease-in-out;
+  transform-style: preserve-3d;
+  cursor: pointer;
+  position: relative;
+}
+
+.about-card-inner.is-flipped {
+  transform: rotateY(180deg);
+}
+
+.about-card-face {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  overflow: hidden;
+  border-radius: 10px;
+  transition: all 0.5s ease-in-out;
+  background-color: #fff;
+}
+
+.about-card-icon {
+  font-size: 36px;
+  margin-right: 10px;
+}
+
+.about-card-face-back {
+  transform: rotateY(180deg);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.about-text-center {
+  display: flex;
+  flex-direction: column;
+  margin: 10px 20px;
+}
+
+.about-text-center p {
+  margin: 2px 0;
+}
+
+.line,
+.skills-title {
+  display: flex;
+  justify-content: space-between;
+}
+
+.line {
+  width: 100%;
+}
+
+.skills-title {
+  width: 80%;
+  margin: 10px 0;
+}
+
+.skills-title p {
+  text-align: left;
+}
+
+.skills-bar-container {
+  background-color: #fff;
+  width: 80%;
+  border-radius: 10px;
+  margin: 10px 0;
+}
+
+.skills-bar {
+  color: #ffff;
+  padding: 5px;
+  text-align: right;
+  font-size: 20px;
+  border-radius: 10px;
+}
+
+.bar-80 {
+  width: 80%;
+}
+
+.bar-60 {
+  width: 60%;
+}
+
+.bar-40 {
+  width: 40%;
+}

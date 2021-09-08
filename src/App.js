@@ -5,7 +5,7 @@ import Navbar from './components/Navbar'
 import Footer from './components/Footer'
 import Dropdown from './components/Dropdown'
 import Home from './pages/index'
-import About from './pages/about'
+import About from './pages/About'
 import Projects from './pages/Projects'
 
 function App() {
