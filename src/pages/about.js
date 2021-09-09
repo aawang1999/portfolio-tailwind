@@ -31,7 +31,6 @@ const About = () => {
               <div className="about-text-center">
                 <p><strong>Stanford University</strong></p>
                 <p>BS Computer Science</p>
-                <p>GPA 3.45</p>
                 <p>09/2018 - Present</p>
               </div>
             </div>

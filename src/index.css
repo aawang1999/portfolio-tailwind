@@ -47,11 +47,6 @@
   background-color: #fff;
 }
 
-.about-card-icon {
-  font-size: 36px;
-  margin-right: 10px;
-}
-
 .about-card-face-back {
   transform: rotateY(180deg);
   display: flex;
